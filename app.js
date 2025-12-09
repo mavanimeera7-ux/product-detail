@@ -22,4 +22,4 @@ app.use("/api/products", productRoutes);
 // app.get("/", (req, res) => {
 //   res.send("Product API is running...");
 // });
-app.listen(2000);
+app.listen(5000);
