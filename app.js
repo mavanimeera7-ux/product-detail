@@ -1,8 +1,8 @@
-const express = require ("express");
+import express from"express";
 const app = express();
-const cors = require ("cors");
-const  productRoutes = require ("./routes/productRoutes");
-const databaseConnection = require ('./database');
+import cors from "cors";
+import  productRoutes from "./routes/productRoutes.js";
+import databaseConnection  from './database.js';
 
 
 databaseConnection();
@@ -22,4 +22,4 @@ app.use("/api/products", productRoutes);
 // app.get("/", (req, res) => {
 //   res.send("Product API is running...");
 // });
-app.listen(5000);
+app.listen(9000);

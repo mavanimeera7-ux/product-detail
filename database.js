@@ -1,4 +1,4 @@
-const mongoose = require ('mongoose');
+import mongoose from 'mongoose';
 
 const databaseConnection = ()=>{
     mongoose.connect('mongodb://localhost:27017/productDB')
@@ -10,4 +10,4 @@ const databaseConnection = ()=>{
         console.log('Database connection error', err);
     })
 }
-module.eports =databaseConnection;
+export default databaseConnection;

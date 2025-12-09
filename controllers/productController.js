@@ -107,7 +107,7 @@
 
 
 
-const { Product } = require("../models/productModel.js");
+import Product from "../models/productModel.js"
 
 const getproducts = async (req, res) => {
   try{
@@ -172,7 +172,7 @@ const updateproduct = async (req, res) => {
   }
 };
 
-const deleteProduct = async (req, res) => {
+const deleteproduct = async (req, res) => {
 
   try {
     const product = await Product.findById(req.params.id);
@@ -188,4 +188,4 @@ const deleteProduct = async (req, res) => {
   }
 };
 
-module.exports= {getProducts,getProductById,createProduct,updateProduct,deleteProduct}
+export {getproducts,getproductById,createproduct,updateproduct,deleteproduct}
