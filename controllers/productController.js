@@ -193,7 +193,7 @@ const deleteproduct = async (req, res) => {
     }
     res.status(200).json({ 
       success: true,
-      message: `Product "${deleteProduct.name}" deleted successfully!`,
+      message: `Product "${deleteproduct.name}" deleted successfully!`,
       deletedId: deleteproduct._id
     });
     

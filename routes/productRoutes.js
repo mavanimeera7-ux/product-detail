@@ -21,6 +21,10 @@ router.post("/", createproduct);
 // PUT update a product
 router.put("/:id", updateproduct);
 
+// PATCH update a product
+
+router.patch("/:id", updateproduct);
+
 // DELETE a product
 router.delete("/:id", deleteproduct);
 
